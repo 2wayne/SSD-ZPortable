@@ -15,18 +15,26 @@ Main Features
 - Benchmark IOPS, transfer speed and random access time (work in progress)
 - View the raw device identify data words.
 
-Missing Features in Beta
-------------------------
+Missing Features & Issues in Beta
+---------------------------------
+- Some formatted SMART values may display incorrectly. Bytes written/read especially.
 - No individual details for each drive in a RAID array.
 - No SMART attributes for certain external USB drives.
 - Benchmark not fully implemented.
 
+Contribute
+----------
+Are the details for your SSD not being shown, or are they incorrect, then please help out.
+
+Within SSD-Z, make sure the SSD in question is selected, then go to the Submit tab. Now fill in
+any comments you may have, and add your email if you wish. Then submit the data to the online database.
+
 Keyboard Shortcuts
 ------------------
-Alt+Q					Quits the program.
-1, 2, 3, n				Selects the drive with this index.
+Alt + Q					Quits the program.
+1, 2, 3...				Selects the drive with this index.
 Alt + Left / Right		Select previous / next device.
-Ctrl + 1, 2, 3, n		Changes the main tab.
+Ctrl + 1, 2, 3...		Changes the main tab.
 Ctrl + PgUp / PgDn		Activate previous / next tab.
 F2						Opens the configurations tab.
 F4						Activates the previously selected tab.
@@ -37,6 +45,7 @@ F12						Spawn a new instance with the same command line parameters.
 Ctrl + T / Ins			Duplicates the current tab page.
 Ctrl + W / Del			Removes the current tab page.
 Alt + 1, 2, 3, 4		Resize window, 100%, 150%, 250%, 300%. Last two are width only.
+Alt + Enter				Toggles window being maximized
 
 Device Color Coding
 -------------------
@@ -58,13 +67,6 @@ Device/Disk			The physical unit itself. Disk refering to old style HDDs.
 Partition			The regions which the disk has been devided into.
 Volume				Partitions properly formatted with an assigned drive letters.
 Drive				Interchangeably used as both the physical unit, as well as a partition with an assigned letter.
-
-Contribute
-----------
-Are the details for your SSD not being shown, or are they incorrect, then please help out.
-
-Within SSD-Z, make sure the SSD in question is selected, then go to the Submit tab. Now fill in
-any comments you may have, and add your email if you wish. Then submit the data to the online database.
 
 Manufacturer Logos
 ------------------

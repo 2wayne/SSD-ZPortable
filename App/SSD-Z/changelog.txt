@@ -1,3 +1,21 @@
+SSD-Z Changes | 2016 Jan 18
+---------------------------
+- Added many new devices with the help from everyone who submitted their SSDs.
+- Device Tab: For devices that report it, the form factor can now be viewed in the Interface field tooltip.
+- Submit Tab: No longer uses the GetVersionEx() API function, as it was deprecated with Windows 8.1.
+- Identify Tab: Improved the listing and selection of words and bits.
+- Partition Tab: Added new column, which shows the percentage that each partition occupies of the total capacity.
+- Removed some debug code from the previous release that was accidentally left in.
+- Submit Tab: Fixed the Unix Timestamp using local time instead of UTC.
+- Submit Tab: Removed a lot of unneeded SMART attribute queries when generating the JSON data.
+- Updated the "Full Update" button, so it's actually being drawn with the active Windows theme.
+- For SSDs with an unknown controller, SMART attributes are no longer based on what is most likely for that vendor, and will use the basic fallback descriptor instead. This behaviour was causing certain SSDs to display some attributes very incorrectly, especially the bytes read/written.
+- Moved the SMART attribute query code into the device core. Previously, each tab that needed access to SMART data, had to query it themselves. This caused extra overhead as both the SMART and Submit tab was querying SMART attributes.
+- The "Bytes Written" field on the Device tab, should be better at pulling the data from the most precise attribute.
+- Submit: Fixed an issue with malformed JSON data under certain circumstances, causing the submission to fail.
+- Device Tab: Added "SATA Speed" in the balloon tooltip for the Interface field.
+- Device Tab: Added "WorldWideName" in the balloon tooltip for the Device Name field.
+
 SSD-Z Changes | 2015 Jul 11
 ---------------------------
 - The keyboard shortcut modifier to change tabs, was changed from Alt to Control. E.g. [Ctrl + 3].
@@ -12,8 +30,8 @@ SSD-Z Changes | 2015 Jul 11
 - More SSDs have been added to the database.
 - Added support for a few more vendors and their associated logo.
 - Fixed clicking on the temperature field on the device tab to swap unit. This will now property update the displayed temperature, instead of turning into "n/a".
-- Partition Tab: Added a column showing if a partition is aligned on a 4k boundry.
-- DevSlp are now be listed in the capabilities, for devices that support it.
+- Partition Tab: Added a column showing if a partition is aligned on a 4k boundary.
+- DevSlp is now listed in the capabilities, for devices that support it.
 - Removed the "-expand" command line parameter. It has been made useless now that the window size is remembered between sessions.
 - Benchmark Tab: Replaced the specific benchmark selection buttons with a dropdown list.
 - Benchmark Tab: The benchmark data is now remembered, even if another benchmark is activated or another device is selected. Only doing a full refresh, [Ctrl + F5] or bottom left button, will clear benchmark data.
