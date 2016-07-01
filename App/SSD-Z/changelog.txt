@@ -1,3 +1,22 @@
+SSD-Z Changes | 2016 Jun 29
+---------------------------
+- The submission feature is working again now.
+
+SSD-Z Changes | 2016 Jun 23
+---------------------------
+- Added more devices, as well as fixed a few with missing or incorrect data.
+- Corrected Silicon Power SSDs being detected as an S60 model. Unfortunately, as these SSDs all report the same model name, it's near impossible through software to determine the exact model.
+- Fixed: If a device was removed from the system, any device with a larger ID after it, would not be detected.
+- The default temperature unit will now always initialize as Celcius, even if your system has been configured for Imperial units. Click the temperature field to toggle the setting to Fahrenheit.
+- Mouse wheel scrolling will now more intuitively reach the window under the mouse, and not the window with focus.
+- Changed keyboard shortcut for "last active tab" from [F4] to [Ctrl + D]. This was to avoid the clash with the global combobox dropdown shortcut of F4.
+- Added option to display the raw SMART attribute values as either decimal or hexadecimal.
+- Fixed: Changing of the temperature unit, will now properly apply to all devices, and not only the current device.
+- Added a new tab "Decoder", which for some devices can decode and display the meaning of the model number. Accessible from the system menu, by right-clicking the window caption.
+- Restructured how the SMART attributes and thresholds are stored and accessed internally. This should fix those extremly rare cases of the threshold ID not matching up with the attribute ID.
+- ListView column headers are now properly scaled to the system DPI.
+- New "Speed" field on the device tab. It shows the active SATA transfer speed, out of the device's maximum.
+
 SSD-Z Changes | 2016 Jan 18
 ---------------------------
 - Added many new devices with the help from everyone who submitted their SSDs.

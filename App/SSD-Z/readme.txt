@@ -21,6 +21,7 @@ Missing Features & Issues in Beta
 - No individual details for each drive in a RAID array.
 - No SMART attributes for certain external USB drives.
 - Benchmark not fully implemented.
+- Support for NVMe devices is incomplete.
 
 Contribute
 ----------
@@ -29,15 +30,26 @@ Are the details for your SSD not being shown, or are they incorrect, then please
 Within SSD-Z, make sure the SSD in question is selected, then go to the Submit tab. Now fill in
 any comments you may have, and add your email if you wish. Then submit the data to the online database.
 
+Frequently Asked Questions
+--------------------------
+Q: SSD-Z does not seem to know my SSD.
+A: Please use the submission feature for your SSD.
+
+Q: Certain SMART attributes does not show a formatted or raw value.
+A: This is because the raw value is zero. Zeros are not shown by design.
+
+Q: Why is the benchmark feature so bad?
+A: This area of SSD-Z is incomplete, and is still work in progress.
+
 Keyboard Shortcuts
 ------------------
 Alt + Q					Quits the program.
 1, 2, 3...				Selects the drive with this index.
 Alt + Left / Right		Select previous / next device.
-Ctrl + 1, 2, 3...		Changes the main tab.
+Ctrl + 1, 2, 3...		Changes the active tab.
 Ctrl + PgUp / PgDn		Activate previous / next tab.
+Ctrl + D				Activates the previously selected tab.
 F2						Opens the configurations tab.
-F4						Activates the previously selected tab.
 F5, Ctrl+R				Refresh active device.
 Ctrl+F5, Ctrl+Shift+R	Do a full refresh, enumerating new devices.
 F9						Toggle serial number visibility.
@@ -51,6 +63,7 @@ Device Color Coding
 -------------------
 Green for SSD
 Orange for HDD and other devices
+Purple for NVMe
 Pink for Removable
 Teal for Optical Drives
 
@@ -77,4 +90,5 @@ Note for images less than 88 pixels, the image will be centered on a white backg
 Credits
 -------
 - Mark James for the famfamfam silk icon set.		http://www.famfamfam.com/lab/icons/silk/
+- People who have submitted their unrecognized SSD to the SSD-Z database.
 - Everyone who have posted feedback on the TechPowerUp forum.
