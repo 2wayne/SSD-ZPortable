@@ -1,3 +1,8 @@
+SSD-Z Changes | 2016 Jul 01
+---------------------------
+- The submission feature is working yet again.
+- Submissions are now being posted over HTTPS.
+
 SSD-Z Changes | 2016 Jun 29
 ---------------------------
 - The submission feature is working again now.
