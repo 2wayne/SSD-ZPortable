@@ -1,3 +1,17 @@
+SSD-Z Changes | 2016 Sep 09
+---------------------------
+- Removed a reference to a debug class that was accidentally left in.
+
+SSD-Z Changes | 2016 Sep 08
+---------------------------
+- More devices are recognized now. Thanks again for all the submissions.
+- Fixed an error that would in some cases display the model name and especially the firmware incorrectly.
+- Decoder: Now shows the form factor for Crucial devices.
+- Unknown LiteOn devices will now properly display the LiteOn logo.
+- No longer blocks support for Aero Snap, when moving the window to the screen edge.
+- Certain devices with a capacity of 1TB or above, was not getting detected due to the pattern matching only looking for a "G" in the model name.
+- Device Tab: The interface will now scale to the window size. To disable this, set "tabs.device.ui_scale" to 1.00, or any other factor you prefer. Using 0.00 means it will autoscale.
+
 SSD-Z Changes | 2016 Jul 01
 ---------------------------
 - The submission feature is working yet again.
